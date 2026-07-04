@@ -10,7 +10,7 @@ default = "10.0.0.0/16"
 
 resource "aws_key_pair" "example" {
 key_name = "terrform-demo"
-public_key = file("~/.ssh/id_rsa.pub)
+public_key = file("~/.ssh/id_rsa.pub")
 }
 
 resource "aws_vpc" "myvpc" {

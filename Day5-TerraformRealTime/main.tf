@@ -95,19 +95,16 @@ destination = "/home/ubuntu/app.py"
 
 provisioner "remote-exec" {
   inline = [
-    "echo 'Hello from the remote instance'",
-
-    # Update package list
     "sudo apt update -y",
-
-    # Install pip
     "sudo apt install -y python3-pip",
-
-    # Install Flask
     "sudo apt install -y python3-flask",
 
-    # Start the Flask app in the background
-    "nohup sudo python3 /home/ubuntu/app.py > /home/ubuntu/app.log 2>&1 &"
+    "python3 --version",
+    "python3 -c 'import flask; print(flask.__version__)'",
+
+    "sudo python3 /home/ubuntu/app.py",
+
+    "echo DONE"
   ]
 }
 }

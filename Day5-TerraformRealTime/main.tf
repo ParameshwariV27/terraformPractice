@@ -89,7 +89,7 @@ host = self.public_ip
 
 
 provisioner "file" {
-source = app.py
+source = "app.py"
 destination = "/home/ubuntu/app.py"
 }
 

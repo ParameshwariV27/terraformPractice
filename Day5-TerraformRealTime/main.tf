@@ -104,6 +104,7 @@ provisioner "remote-exec" {
 
     "sudo python3 /home/ubuntu/app.py",
 
+
     "echo DONE"
   ]
 }

@@ -100,7 +100,7 @@ inline = [
 "sudo apt-get install -y python3-pip",
 "cd /home/ubuntu",
 "sudo pip3 install flask",
-"sudo ptyhon3 app.py &",
+"sudo python3 app.py &",
 ]
 }
 }

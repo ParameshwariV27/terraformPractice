@@ -9,4 +9,9 @@
 *.tfvars
 
 #Crash logs
-crash.logwq
+crash.log
+
+#keys
+*.pub
+
+*.vs

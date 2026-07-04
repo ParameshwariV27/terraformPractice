@@ -1,0 +1,12 @@
+# Terraform workinhg directory
+.terraform/
+
+#Terraform state files
+*.tfstate
+*.tfstate.*
+
+#Variable files 
+*.tfvars
+
+#Crash logs
+crash.logwq

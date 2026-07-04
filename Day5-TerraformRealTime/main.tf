@@ -19,7 +19,7 @@ cidr_block = var.cidr
 
 resource "aws_subnet" "sub1" {
 vpc_id = aws_vpc.myvpc.id
-cidr_block = "10.0.0.0/24
+cidr_block = "10.0.0.0/24"
 availability_zone = "ap-south-1a"
 map_public_ip_on_launch = true
 }
@@ -95,7 +95,7 @@ destination = "/home/ubuntu/app.py"
 
 provisioner " remote-exec" {
 inline = [
-"echo 'Hello from the remote instance!' > /home/ubuntu/hello.txt",
+"echo 'Hello from the remote instance",
 "sudo apt update -y",
 "sudo apt-get install -y python3-pip",
 "cd /home/ubuntu",

@@ -93,7 +93,7 @@ source = app.py
 destination = "/home/ubuntu/app.py"
 }
 
-provisioner " remote-exec" {
+provisioner "remote-exec" {
 inline = [
 "echo 'Hello from the remote instance",
 "sudo apt update -y",

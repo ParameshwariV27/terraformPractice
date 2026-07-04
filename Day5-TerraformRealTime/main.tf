@@ -95,12 +95,12 @@ destination = "/home/ubuntu/app.py"
 
 provisioner "remote-exec" {
 inline = [
-"echo Hello from the remote instance",
+"echo 'Hello from the remote instance",
 "sudo apt update -y",
 "sudo apt install -y python3-pip",
 "cd /home/ubuntu",
 "sudo apt install python3-flask",
-"sudo python3 app.py",
+""nohup sudo python3 app.py > app.log 2>&1 &"",
 ]
 }
 }

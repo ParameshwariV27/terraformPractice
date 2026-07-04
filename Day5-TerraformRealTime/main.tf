@@ -100,7 +100,7 @@ inline = [
 "sudo apt install -y python3-pip",
 "cd /home/ubuntu",
 "sudo apt install python3-flask",
-""nohup sudo python3 app.py > app.log 2>&1 &"",
+"sudo python3 app.py > app.log 2>&1 &",
 ]
 }
 }

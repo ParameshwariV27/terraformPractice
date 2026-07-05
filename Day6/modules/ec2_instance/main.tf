@@ -7,7 +7,7 @@ description = "The AMI ID for the instance"
 type = string
 }
 variable "instance_type" {
-decsription = "The type of insatnce of launch"
+description = "The type of insatnce of launch"
 type = string
 }
 resource "aws_instance" "example" {

@@ -7,7 +7,7 @@ description = "The AMI ID for the instance"
 }
 
 variable "instance_type" {
-decsription = "The type of instance to launch"
+description = "The type of instance to launch"
 }
 
 module "ec2_instance" {
